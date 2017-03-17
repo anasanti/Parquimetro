@@ -34,7 +34,7 @@ public class Parquimetro {
 	}
 	
 	// Retorna o saldo acumulado no parquimetro
-	public double getSaldo(){ 
+	public int getSaldo(){ 
 		return(saldo);
 	}
 	
@@ -52,11 +52,9 @@ public class Parquimetro {
 	
 	// Devolve o saldo existente. Retorna o valor devolvido
 	public int devolve(){ 
-		int devolveSaldo = saldo;
+		int tmp = saldo;
 		saldo = 0;
-		return devolveSaldo;
-		
+		return (tmp);
 	}
-
 
 }
